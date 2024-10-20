@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <!-- Brand Logo with Text -->
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="GramSync Logo" class="logo-img">
+                <span>GramSync</span>
+            </a>
+
+            <!-- Language Selector for Small Screen -->
+            <div class="d-lg-none me-3">
+                <a class="text-dark" href="#" id="languageDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-globe"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdownMobile">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                </ul>
+            </div>
+
+            <!-- Toggle Button for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schemes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            E-Governance
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item" href="services.html">Online Applications</a></li>
+                            <li><a class="dropdown-item" href="#">Track Applications</a></li>
+                            <li><a class="dropdown-item" href="#">Panchayat Meetings</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogTemplatesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Citizen Corner
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="blogTemplatesDropdown">
+                            <li><a class="dropdown-item" href="#">File a Complaint</a></li>
+                            <li><a class="dropdown-item" href="#">Public Feedback</a></li>
+                            <li><a class="dropdown-item" href="#">Volunteer Opportunities</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Language Selector and Sign Up Button (Desktop View) -->
+                <div class="d-flex align-items-center">
+                    <div class="dropdown d-none d-lg-block me-3">
+                        <a class="dropdown-toggle text-dark" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe"></i> Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                            <li><a class="dropdown-item" href="#">Spanish</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Sign Up Button -->
+                    <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Birth Certificate Application Form</h2>
+        <form>
+            <!-- Child's Details -->
+            <div class="mb-3">
+                <label for="childName" class="form-label">Full Name of Child</label>
+                <input type="text" class="form-control" id="childName" placeholder="Enter child's full name" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="placeOfBirth" class="form-label">Place of Birth</label>
+                <input type="text" class="form-control" id="placeOfBirth" placeholder="Enter place of birth" required>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="other" value="Other">
+                        <label class="form-check-label" for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Parent Details -->
+            <div class="mb-3">
+                <label for="fatherName" class="form-label">Father's Name</label>
+                <input type="text" class="form-control" id="fatherName" placeholder="Enter father's full name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="fatherIdProof" class="form-label">Father's ID Proof (Aadhaar/Passport)</label>
+                <input type="file" class="form-control" id="fatherIdProof" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="motherName" class="form-label">Mother's Name</label>
+                <input type="text" class="form-control" id="motherName" placeholder="Enter mother's full name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="motherIdProof" class="form-label">Mother's ID Proof (Aadhaar/Passport)</label>
+                <input type="file" class="form-control" id="motherIdProof" required>
+            </div>
+            
+            <!-- Birth Information -->
+            <div class="mb-3">
+                <label for="hospitalName" class="form-label">Hospital Name</label>
+                <input type="text" class="form-control" id="hospitalName" placeholder="Enter hospital name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="hospitalAddress" class="form-label">Hospital Address</label>
+                <input type="text" class="form-control" id="hospitalAddress" placeholder="Enter hospital address" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="birthCertificate" class="form-label">Hospital Birth Certificate</label>
+                <input type="file" class="form-control" id="birthCertificate" required>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="mb-3">
+                <label for="parentContact" class="form-label">Parent's Contact Number</label>
+                <input type="tel" class="form-control" id="parentContact" placeholder="Enter contact number" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="parentEmail" class="form-label">Parent's Email Address</label>
+                <input type="email" class="form-control" id="parentEmail" placeholder="Enter email address" required>
+            </div>
+
+            <!-- Residential Address -->
+            <div class="mb-3">
+                <label for="streetAddress" class="form-label">Street Address</label>
+                <input type="text" class="form-control" id="streetAddress" placeholder="Enter street address" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="villageCity" class="form-label">Village/City</label>
+                <input type="text" class="form-control" id="villageCity" placeholder="Enter village or city" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="postalCode" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="postalCode" placeholder="Enter postal code" required>
+            </div>
+
+            <!-- Declaration -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="declaration" required>
+                <label class="form-check-label" for="declaration">I declare that the information provided is accurate to the best of my knowledge.</label>
+            </div>
+
+            <!-- Submit and Reset Buttons -->
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
